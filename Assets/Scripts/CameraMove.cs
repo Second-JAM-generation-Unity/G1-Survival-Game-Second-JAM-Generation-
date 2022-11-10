@@ -15,6 +15,6 @@ public class CameraMove : MonoBehaviour
     void FixedUpdate()
     {
         //transform.LookAt(player.transform);
-        transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
+        transform.position = new Vector3(transform.position.x, player.transform.position.y + 4, player.transform.position.z);
     }
 }
